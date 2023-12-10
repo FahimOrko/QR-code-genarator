@@ -1,0 +1,59 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper{
+
+    border: 8px solid #93BFCF;
+    max-width: 410px;
+    height: 320px;
+    border-radius: 7px;
+    transition: height 0.2s ease ;
+}
+
+.wrapper.active{
+    height: 570px;
+}
+
+.from > h4 {
+    font-size: 21px;
+    font-weight: 400;
+
+}
+
+.from :where(input,button){
+    width : 100%;
+    height : 55px;
+}
+
+.from input{
+    font-size: 18px;
+    padding: 0 17px;
+    border: 2px solid #6096B4;
+}
+
+.from button{
+    color:black;
+    background-color:#BDCDD6;
+    cursor: pointer;
+    border: 2px solid#6096B4;
+}
+
+.qr-code{
+    opacity: 0 ;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #6096B4;
+}
+
+.wrapper.active .qr-code {
+    opacity: 1 ;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.5s ease;
+}
